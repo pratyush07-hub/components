@@ -1,47 +1,68 @@
 📦 React Reusable Components
 
-This repository contains reusable UI components built with React, TypeScript, and TailwindCSS.
-The goal is to provide flexible, customizable, and responsive components that can be easily integrated into any project.
+This repository contains reusable UI components (DataTable and InputField) built with React, TypeScript, and TailwindCSS.
+The goal is to provide flexible, customizable, and responsive components for modern applications.
 
-📊 DataTable Component
+🚀 Setup Instructions
 
-The DataTable component allows you to display tabular data in a clean and responsive way.
-It supports sorting, row selection, and has built-in states for loading and empty data.
+Clone the repo
+git clone https://github.com/your-username/react-components.git
+cd react-components
 
-Key Features:
+Install dependencies
+npm install
+or
+yarn install
 
-Display tabular data with customizable columns
+Run the development server
+npm run dev
+or
+yarn dev
 
-Sorting on specific columns (ascending and descending)
+Open http://localhost:5173 (Vite default) to see it running.
 
-Row selection with single or multiple checkboxes
+📂 Suggested Folder Structure
+react-components/
+│── src/
+│   │── components/
+│   │   │── DataTable.tsx
+│   │   │── InputField.tsx
+│   │── App.tsx
+│   │── main.tsx
+│   │── index.css
+│── public/
+│── package.json
+│── tsconfig.json
+│── tailwind.config.js
+│── README.md
 
-Built-in loading and empty states
 
-Fully responsive with horizontal scrolling on smaller screens
+📊 Components
+DataTable
 
-✏️ InputField Component
+Displays tabular data with sorting, row selection, loading, and empty states.
 
-The InputField component is a flexible and customizable input element with multiple styling options and validation states.
-It can be used for text, password, email, and other input types, and supports optional features like clear buttons and password visibility toggle.
+Responsive by default with horizontal scroll on smaller screens.
 
-Key Features:
+InputField
 
-Label, placeholder, helper text, and error message support
+Flexible input with label, placeholder, helper text, error handling, and multiple variants.
 
-Different states: disabled, invalid, and loading
+Supports clear button, password toggle, and light/dark themes.
 
-Variants available: filled, outlined, and ghost
+🛠️ Approach
 
-Sizes available: small, medium, and large
+Modular Design → Each component lives in its own folder with a dedicated file and an index.ts for easy exports.
 
-Optional clear button and password visibility toggle
+TypeScript First → Strong typing ensures reusability and reduces bugs.
 
-Light and dark theme compatibility
+TailwindCSS → Used for fast, responsive styling and theme support.
 
-📱 Responsive & Reusable
+Reusability & Flexibility → Components are generic and accept props to cover multiple use cases.
 
-Both components are designed to be mobile-friendly and easy to customize using props, making them suitable for a wide range of applications.
+Clean States Handling → Loading and empty states are built-in so developers don’t need to reinvent them.
+
+Responsiveness → Ensured by wrapping tables in scroll containers and using adaptive spacing and font sizes.
 
 🤝 Contributing
 
