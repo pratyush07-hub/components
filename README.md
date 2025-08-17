@@ -1,69 +1,48 @@
-# React + TypeScript + Vite
+📦 React Reusable Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains reusable UI components built with React, TypeScript, and TailwindCSS.
+The goal is to provide flexible, customizable, and responsive components that can be easily integrated into any project.
 
-Currently, two official plugins are available:
+📊 DataTable Component
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The DataTable component allows you to display tabular data in a clean and responsive way.
+It supports sorting, row selection, and has built-in states for loading and empty data.
 
-## Expanding the ESLint configuration
+Key Features:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Display tabular data with customizable columns
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Sorting on specific columns (ascending and descending)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Row selection with single or multiple checkboxes
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Built-in loading and empty states
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Fully responsive with horizontal scrolling on smaller screens
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+✏️ InputField Component
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The InputField component is a flexible and customizable input element with multiple styling options and validation states.
+It can be used for text, password, email, and other input types, and supports optional features like clear buttons and password visibility toggle.
+
+Key Features:
+
+Label, placeholder, helper text, and error message support
+
+Different states: disabled, invalid, and loading
+
+Variants available: filled, outlined, and ghost
+
+Sizes available: small, medium, and large
+
+Optional clear button and password visibility toggle
+
+Light and dark theme compatibility
+
+📱 Responsive & Reusable
+
+Both components are designed to be mobile-friendly and easy to customize using props, making them suitable for a wide range of applications.
+
+🤝 Contributing
+
+Contributions are welcome! Fork the repository, create a feature branch, make your changes, and submit a pull request.
