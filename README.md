@@ -21,21 +21,6 @@ yarn dev
 
 Open http://localhost:5173 (Vite default) to see it running.
 
-📂 Suggested Folder Structure
-react-components/
-│── src/
-│   │── components/
-│   │   │── DataTable.tsx
-│   │   │── InputField.tsx
-│   │── App.tsx
-│   │── main.tsx
-│   │── index.css
-│── public/
-│── package.json
-│── tsconfig.json
-│── tailwind.config.js
-│── README.md
-
 
 📊 Components
 DataTable
